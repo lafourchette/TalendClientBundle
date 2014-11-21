@@ -32,3 +32,30 @@
 
 # Composer PHAR
 /composer.phar
+/nbproject/private/
+
+# Configuration files
+/nbproject
+
+# Netbeans files
+.buildpath
+.project
+.settings/*
+
+# PHPStorm files
+.idea
+.DS_Store
+install.log
+web/*.xml.gz
+web/*index.xml
+
+# Vim files
+*.swp
+web/*.xml
+web/*.xml.gz
+app/lock
+build
+
+# twgit files
+.twgit_features_subject
+web/coverage/
