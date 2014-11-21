@@ -151,3 +151,4 @@ abstract class ProphecyTestCase extends \PHPUnit_Framework_TestCase
         return $class->newInstanceArgs($instanceParameters);
     }
 }
+
