@@ -1,0 +1,43 @@
+{
+    "name": "lafourchette/talend-client-bundle",
+    "license": "MIT",
+    "type": "symfony-bundle",
+    "keywords": ["talend", "client", "api"],
+    "description": "The \"Symfony Standard Edition\" distribution",
+    "authors": [
+        {
+            "name": "LaFourchette LAB",
+            "email": "lab@lafourchette.com"
+        }
+    ],
+    "autoload": {
+        "psr-0": { "": "src/", "SymfonyStandard": "app/" }
+    },
+    "repositories": [
+    {
+        "type": "vcs",
+        "url": "git@github.com:lafourchette/doctrine2.git"
+    }
+    ],
+    "require": {
+        "php": ">=5.3.3",
+        "symfony/symfony": "2.5.*",
+        "twig/extensions": "~1.0",
+        "symfony/monolog-bundle": "~2.4",
+        "sensio/distribution-bundle": "~3.0",
+        "sensio/framework-extra-bundle": "~3.0",
+	"lafourchette/talend-php-sdk": "dev-master@dev"
+    },
+    "require-dev": {
+        "phpspec/prophecy": "*",
+        "phpunit/phpunit": "3.7.*@dev"
+        
+    },
+    "config": {
+        "bin-dir": "bin"
+    },
+    "autoload": {
+        "psr-0": { "TalendClientBundle": "" }
+    },
+    "target-dir": "TalendClientBundle"
+}
