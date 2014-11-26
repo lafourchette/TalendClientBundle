@@ -1,6 +1,6 @@
 <?php
 
-namespace LaFourchette\TalendClientBundle;\Tests;
+namespace LaFourchette\TalendClientBundle\Tests;
 
 use Prophecy\Prophet;
 
