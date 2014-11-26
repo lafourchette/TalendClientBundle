@@ -3,7 +3,7 @@
     "license": "MIT",
     "type": "symfony-bundle",
     "keywords": ["talend", "client", "api"],
-    "description": "The \"Symfony Standard Edition\" distribution",
+    "description": "Talend Client Bundle",
     "authors": [
         {
             "name": "LaFourchette LAB",
