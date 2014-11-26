@@ -1,5 +1,6 @@
 TalendClientBundle
 ==============================
+[![Build Status](https://travis-ci.org/lafourchette/TalendClientBundle.svg?branch=master)](https://travis-ci.org/lafourchette/TalendClientBundle)
 
 ## Installation
 Add TalendClientBundle to your composer.json, then update
