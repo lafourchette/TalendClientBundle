@@ -21,7 +21,7 @@
     ],
     "require": {
         "php": ">=5.3.3",
-        "symfony/symfony": ">=2.0",
+        "symfony/symfony": ">=2.0,<3.0",
         "symfony/monolog-bundle": ">=2.0",
 	"lafourchette/talend-php-sdk": "~1.0"
     },
