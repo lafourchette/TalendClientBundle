@@ -1,14 +1,14 @@
 <?php
-namespace LaFourchette\TalendClientBundle\Tests\DependencyInjection;
+namespace TalendClientBundle\Tests\DependencyInjection;
 
-use LaFourchette\TalendClientBundle\Tests\ProphecyTestCase;
-use LaFourchette\TalendClientBundle\DependencyInjection\Configuration;
+use TalendClientBundle\Tests\ProphecyTestCase;
+use TalendClientBundle\DependencyInjection\Configuration;
 use Symfony\Component\Config\Definition\Processor;
 
 /**
  * Class ConfigurationTest
  *
- * @package LaFourchette\TalendClientBundle\Tests\DependencyInjection
+ * @package TalendClientBundle\Tests\DependencyInjection
  */
 class ConfigurationTest extends ProphecyTestCase
 {
@@ -29,7 +29,7 @@ class ConfigurationTest extends ProphecyTestCase
     {
         parent::setUp();
 
-        $this->configuration = $this->prophesize('\LaFourchette\TalendClientBundle\DependencyInjection\Configuration');
+        $this->configuration = $this->prophesize('\TalendClientBundle\DependencyInjection\Configuration');
         $this->processor = $this->prophesize('\Symfony\Component\Config\Definition\Processor');
     }
 

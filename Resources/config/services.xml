@@ -5,25 +5,25 @@
     xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
     
     <services>
-        <service id="la_fourchette_talend_client.log_plugin.adapter" class="Guzzle\Log\MonologLogAdapter" public="false">
+        <service id="talend_client.log_plugin.adapter" class="Guzzle\Log\MonologLogAdapter" public="false">
             <argument type="service" id="logger" />
             <tag name="monolog.logger" channel="talend_api" />
         </service>
 
-        <service id="la_fourchette_talend_client.log_plugin" class="Guzzle\Plugin\Log\LogPlugin" public="false">
+        <service id="talend_client.log_plugin" class="Guzzle\Plugin\Log\LogPlugin" public="false">
             <argument type="service" id="la_fourchette_talend_client.log_plugin.adapter" />
-            <argument>%la_fourchette_talend_client.logs_format%</argument>
+            <argument>%talend_client.logs_format%</argument>
             <tag name="la_fourchette_talend_client.log_plugin" />
         </service>
 
-        <service id="la_fourchette_talend_client"
+        <service id="talend_client"
                 class="LaFourchette\Talend\TalendClient"
                 factory-class="LaFourchette\Talend\TalendClient"
                 factory-method="factory">
             <argument type="collection">
-                <argument key="base_url">%la_fourchette_talend_client.base_url%</argument>
-                <argument key="login">%la_fourchette_talend_client.login%</argument>
-                <argument key="password">%la_fourchette_talend_client.password%</argument>
+                <argument key="base_url">%talend_client.base_url%</argument>
+                <argument key="login">%talend_client.login%</argument>
+                <argument key="password">%talend_client.password%</argument>
             </argument>
         </service>
     </services>
