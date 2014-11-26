@@ -1,6 +1,6 @@
 TalendClientBundle
 ==============================
-[![Build Status](https://travis-ci.org/lafourchette/TalendClientBundle.svg?branch=master)](https://travis-ci.org/lafourchette/TalendClientBundle)
+[![Build Status](https://travis-ci.org/lafourchette/TalendClientBundle.svg?branch=master)](https://travis-ci.org/lafourchette/TalendClientBundle) [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/lafourchette/TalendClientBundle/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/lafourchette/TalendClientBundle/?branch=master) [![Code Coverage](https://scrutinizer-ci.com/g/lafourchette/TalendClientBundle/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/lafourchette/TalendClientBundle/?branch=master)
 
 ## Installation
 Add TalendClientBundle to your composer.json, then update
