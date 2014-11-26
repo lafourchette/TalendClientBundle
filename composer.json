@@ -37,7 +37,7 @@
         "bin-dir": "bin"
     },
     "autoload": {
-        "psr-0": { "LaFourchette/TalendClientBundle": "" }
+        "psr-0": { "TalendClientBundle": "" }
     },
     "target-dir": "TalendClientBundle"
 }

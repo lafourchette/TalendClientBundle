@@ -2,7 +2,7 @@ TalendClientBundle
 ==============================
 
 ## Installation
-Add LaFourchetteTalendClientBundle to your composer.json, then update
+Add TalendClientBundle to your composer.json, then update
 
 ```json
 {
@@ -21,7 +21,7 @@ Add LaFourchetteTalendClientBundle to your application kernel
     {
         return array(
             // ...
-            new LaFourchette\TalendBundle\LaFourchetteTalendClientBundle(),
+            new TalendClientBundle(),
             // ...
         );
     }
@@ -33,15 +33,15 @@ Update your configuration
 # app/config/parameters.yml
 parameters:
     # Talend Client API
-    la_fourchette_talend_client.base_url: "http://talend-url:8080/org.talend.administrator/metaServlet"
-    la_fourchette_talend_client.login: "lab@lafourchette.com"
-    la_fourchette_talend_client.password: "lafourchette"
+    talend_client.base_url: "http://talend-url:8080/org.talend.administrator/metaServlet"
+    talend_client.login: "lab@lafourchette.com"
+    talend_client.password: "lafourchette"
 ```
 
 ## Usage
 
 ```php
-$client = $container('la_fourchette_talend_client');
+$client = $container('talend_client');
 
 // List all the tasks
 $client->listTasks();

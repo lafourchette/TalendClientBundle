@@ -1,6 +1,6 @@
 <?php
 
-namespace LaFourchette\TalendClientBundle\DependencyInjection;
+namespace TalendClientBundle\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\Config\FileLocator;
@@ -13,7 +13,7 @@ use Symfony\Component\DependencyInjection\Reference;
  *
  * To learn more see {@link http://symfony.com/doc/current/cookbook/bundles/extension.html}
  */
-class LaFourchetteTalendClientExtension extends Extension
+class TalendClientExtension extends Extension
 {
     /**
      * {@inheritdoc}
@@ -24,13 +24,13 @@ class LaFourchetteTalendClientExtension extends Extension
         $config = $this->processConfiguration($configuration, $configs);
 
         foreach ($config as $name => $value) {
-            $container->setParameter(sprintf('la_fourchette_talend_client.%s', $name), $value);
+            $container->setParameter(sprintf('talend_client.%s', $name), $value);
         }
 
         $loader = new Loader\XmlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
         $loader->load('services.xml');
 
-        $definition = $container->getDefinition('la_fourchette_talend_client');
-        $definition->addMethodCall('addSubscriber', array(new Reference('la_fourchette_talend_client.log_plugin')));
+        $definition = $container->getDefinition('talend_client');
+        $definition->addMethodCall('addSubscriber', array(new Reference('talend_client.log_plugin')));
     }
 }

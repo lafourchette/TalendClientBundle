@@ -1,6 +1,6 @@
 <?php
 
-namespace LaFourchette\TalendClientBundle\Tests;
+namespace TalendClientBundle\Tests;
 
 use Prophecy\Prophet;
 
@@ -8,7 +8,7 @@ use Prophecy\Prophet;
  * Class ProphecyTestCase
  * Ease Test writing with prophecy by providing some usefull mocking methods.
  *
- * @package LaFourchette\CoreBundle\Tests
+ * @package TalendClientBundle\Tests
  */
 abstract class ProphecyTestCase extends \PHPUnit_Framework_TestCase
 {
