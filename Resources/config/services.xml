@@ -11,9 +11,9 @@
         </service>
 
         <service id="talend_client.log_plugin" class="Guzzle\Plugin\Log\LogPlugin" public="false">
-            <argument type="service" id="la_fourchette_talend_client.log_plugin.adapter" />
+            <argument type="service" id="talend_client.log_plugin.adapter" />
             <argument>%talend_client.logs_format%</argument>
-            <tag name="la_fourchette_talend_client.log_plugin" />
+            <tag name="talend_client.log_plugin" />
         </service>
 
         <service id="talend_client"
